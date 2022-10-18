@@ -369,6 +369,7 @@ footer {
   text-decoration: none;
 }
 
+
 .footer-link,
 .footer-contact {
   text-decoration: none;
@@ -384,6 +385,60 @@ footer {
 .footer-contact {
   color: var(--footer-contact-color);
   font-style: normal;
+}
+
+.footer-flex{
+  display: flex;
+  
+}
+
+.social-link-container{
+  display: flex;
+  
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.social-link-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link-item:not(:last-child){
+margin-right: 10px;
+}
+
+.social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus{
+  fill: var(--primary-white-color);
+  background-color: var(--secondary-text-color);
+}
+
+.social-link-text{
+  margin: 0;
+  margin-bottom:20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: var(--primary-white-color);
 }
 
 /* Portfolio */
